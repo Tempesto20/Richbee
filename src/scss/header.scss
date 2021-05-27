@@ -1,0 +1,265 @@
+  .header {
+    padding: 0px 0px;
+    margin: 0px 0px;
+    position: relative;
+    z-index: 50;
+  }
+
+  .header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .header__background {
+    background: #383838;
+  }
+
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__burger {
+    display: none;
+  }
+
+  .header__nav {
+    z-index: 3;
+    margin-right: 0px;
+
+  }
+
+  .header__nav-list {
+    display: flex;
+    list-style: none;
+  }
+
+  .header__nav-item {
+    position: relative;
+    margin: 15px 20px 15px 0px;
+  }
+
+  .header__nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #B8B8B8;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    &:hover {
+      border-bottom: 1px solid rgb(255, 255, 255);
+    }
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: $md3) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .order {
+  }
+  .order__text{
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFD637;
+    transition: all 0.3s ease 0s;
+    border-bottom: 1px dashed #FFD637;
+    margin: 15px 26px 15px 0px;
+    @media (max-width: $md3) {
+      max-width: 96px;
+      margin: 20px 0px 20px 20px;
+    }
+
+    &:hover {
+      border-bottom: 1px dashed #ebbe0e;
+    }
+    
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: $md3) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .network {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: $md3) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .vk {
+    margin: 15px 15px 15px 0px;
+    @media (max-width: $md3) {
+      margin: 0px 15px 20px 20px;
+    }
+  }
+
+  .whatsapp {
+    margin: 15px 15px 15px 0px;
+    @media (max-width: $md3) {
+      margin: 0px 15px 20px 0px;
+    }
+  }
+
+  .instagram {
+    margin: 15px 15px 15px 0px;
+    @media (max-width: $md3) {
+      margin: 0px 15px 20px 0px;
+    }
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .email {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin: 15px 15px 15px 27px;
+    @media (max-width: $md3) {
+      margin: 0px 15px 20px 20px;
+    }
+  }
+
+  .line {
+    color: white;
+    margin: 15px 15px 15px 0px;
+    @media (max-width: $md3) {
+      margin: 0px 15px 20px 0px;
+    }
+  }
+
+  .phone {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin: 15px 15px 15px 0px;
+    @media (max-width: $md3) {
+      margin: 0px 15px 20px 0px;
+    }
+  }
+
+  @media (max-width: $md2) {
+    .header {
+      width: 100%;
+      position: fixed;
+    }
+
+    .header__nav {
+      position: fixed;
+      overflow: auto;
+
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      z-index: 1;
+      padding-top: 60px;
+      transition: all 0.3s ease 0s;
+
+      &.active {
+        top: 0;
+      }
+    }
+
+    html.lock,
+    body.lock {
+      overflow: hidden;
+    }
+
+    .header__nav-link {
+      padding: 0px;
+
+      &:hover {
+        border-top: none;
+      }
+    }
+
+    .header__nav-list {
+      display: block;
+    }
+
+    .header__burger {
+      order: 3;
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+      z-index: 3;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:before,
+      &:after {
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+      }
+
+      &:before {
+        top: 0;
+      }
+
+      &:after {
+        bottom: 0;
+      }
+
+      &.active {
+        &:before {
+          content: '';
+          transform: rotate(45deg);
+          top: 9px;
+        }
+
+        &:after {
+          content: '';
+          transform: rotate(-45deg);
+          bottom: 9px;
+        }
+
+        span {
+          transform: scale(0);
+        }
+      }
+
+      span {
+        position: absolute;
+        background-color: #fff;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+      }
+    }
+  }
