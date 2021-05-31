@@ -156,6 +156,7 @@
 .richbee__card-basket {
     display: flex;
     flex-direction: row;
+    position: relative;
     height: 48px;
     background: #F8F8F8;
     margin: 34px 0px 0px 0px;
@@ -174,12 +175,9 @@
 }
 
 .card__basket-point {
-    position: absolute;
-    top: 44px;
-    right: 230px;
-    @media (max-width: $md1) {
-        display: none;
-    }
+    position: relative;
+    top: 10px;
+    right: 20px;
 }
 
 .basket__title {

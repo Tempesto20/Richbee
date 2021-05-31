@@ -257,13 +257,63 @@
 // };
 
 
-$(function(){
+/*$(function(){
 	$('.slick-vertical').slick({
 		vertical: true,
 		verticalSwiping: true,
-		slidesToShow: 3,
-		autoplay: true,
-		prevArrow: '<img src="img/svg/up.svg">',
-        nextArrow: '<img src="img/svg/down.svg">'
+		slidesToShow: 1,
+		autoplay: false,
+		prevArrow: '<img src="img/svg/up.svg" alt="">',
+        nextArrow: '<img src="img/svg/down.svg" alt="">'
+	});
+});*/
+
+$(function(){
+	$('.slider-thumb').slick({
+		autoplay: false,
+		vertical: true,
+		infinite: true,
+		verticalSwiping: true,
+		slidesPerRow: 4,
+		slidesToShow: 4,
+		asNavFor: '.slider-preview',
+		focusOnSelect: true,
+		prevArrow: '<img src="img/svg/up.svg" alt="" class="set__up">',
+		nextArrow: '<img src="img/svg/down.svg" alt="" class="set__down">',
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					vertical: false,
+				}
+			},
+			{
+				breakpoint: 479,
+				settings: {
+					vertical: false,
+					slidesPerRow: 3,
+					slidesToShow: 3,
+				}
+			},
+		]
+	});
+	$('.slider-preview').slick({
+		autoplay: false,
+		vertical: true,
+		infinite: true,
+		slidesPerRow: 1,
+		slidesToShow: 1,
+		asNavFor: '.slider-thumb',
+		arrows: false,
+		draggable: false,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					vertical: false,
+					fade: true,
+				}
+			},
+		]
 	});
 });

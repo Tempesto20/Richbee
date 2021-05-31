@@ -4,8 +4,8 @@
     margin: 0px 0px;
 }
 .set__background {
-    // background: #E5E5E5;
-    background: rgb(248, 26, 181);
+    background: #E5E5E5;
+	padding-bottom: 200px;
 }
 .set__container {
 }
@@ -49,12 +49,8 @@ margin: 30px 5px 0px 120px;
     margin: 25px 0px 0px 120px;
 }
 
-.set__img-1{
-    width: 200px;
-    height: 200px;
-}
 
-.slick-prev, 
+/*.slick-prev, 
 .slick-next {
     -webkit-transform: translate(-50%, 0) rotate(90deg);
     -ms-transform: translate(-50%, 0) rotate(90deg);
@@ -69,4 +65,109 @@ margin: 30px 5px 0px 120px;
 .slick-next {
     top: auto;
     bottom: -20px;
+}*/
+
+/* START MODULE STYLING */
+.set__up {
+	position: absolute;
+	width: 300px;
+	height: 30px;
+	top: -500px;
+	// margin: 20px 0px 25px 48px;
+}
+.set__down{
+	width: 30px;
+	height: 30px;
+	// margin: 20px 0px 0px 48px;
+}
+.set__img{
+width: 60px;
+height: 60px;
+object-fit: cover;
+}
+
+.set__img-1{
+max-width: 730px;
+max-height: 450px;
+background-size: cover;
+background: 0 0 auto no-repeat;
+// object-fit: cover;
+}
+
+
+.module-gallery {
+	
+	object-fit: cover !important ;
+}
+
+.type-image {
+
+
+}
+.module-gallery .slider-wrapper {
+	display: flex;
+	overflow: hidden;
+	height: 450px
+}
+.slider-thumb {
+	max-width: 125px;
+	margin: 88px 20px 0px 122px;
+}
+.module-gallery .slider-thumb li {
+	margin-bottom: 20px;
+}
+/* .module-gallery .slider-thumb img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+} */
+
+.slider-preview{
+	max-width: 730px;
+	max-height: 450px;	
+	margin-top: 20px;
+}
+
+
+.module-gallery .slider-thumb .slick-prev,
+.module-gallery .slider-thumb .slick-next {
+	z-index: 1;
+
+}
+.module-gallery .slider-thumb .slick-prev:before,
+.module-gallery .slider-thumb .slick-next:before {
+	content: '';
+}
+.module-gallery .slider-thumb .slick-prev:hover,
+.module-gallery .slider-thumb .slick-next:hover {
+	opacity: 0.5;
+}	
+.slick-track .slick-track { display: none; }
+
+
+@media (max-width: 767px) {
+	.module-gallery .slider-wrapper {
+		flex-direction: column-reverse;
+	}
+	.module-gallery .slider-thumb {
+		max-width: 100%;
+	}
+	.module-gallery .slider-thumb .slick-prev,
+	.module-gallery .slider-thumb .slick-next {
+		top: 50%;
+		width: 1em;
+		height: 100%;
+	}
+	.module-gallery .slider-thumb .slick-prev {
+		left: 0;
+	}
+	.module-gallery .slider-thumb .slick-prev .fa:before {
+		content: "\f104";
+	}
+	.module-gallery .slider-thumb .slick-next {
+		right: 0;
+	}
+	.module-gallery .slider-thumb .slick-next .fa:before {
+		content: "\f105";
+	}
 }
