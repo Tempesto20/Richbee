@@ -274,13 +274,13 @@ $(function(){
 		vertical: true,
 		infinite: true,
 		verticalSwiping: true,
-		slidesPerRow: 4,
+		// slidesPerRow: 3,
+		slidesToScroll: 4,
 		slidesToShow: 4,
 		asNavFor: '.slider-preview',
+		arrows: true,
 		focusOnSelect: true,
-		prevArrow: '<img src="img/svg/up.svg" alt="" class="set__up">',
-		nextArrow: '<img src="img/svg/down.svg" alt="" class="set__down">',
-		responsive: [
+		/*responsive: [
 			{
 				breakpoint: 767,
 				settings: {
@@ -295,7 +295,7 @@ $(function(){
 					slidesToShow: 3,
 				}
 			},
-		]
+		]*/
 	});
 	$('.slider-preview').slick({
 		autoplay: false,
@@ -303,10 +303,13 @@ $(function(){
 		infinite: true,
 		slidesPerRow: 1,
 		slidesToShow: 1,
-		asNavFor: '.slider-thumb',
-		arrows: false,
+		appendArrows: $('.arrows'),
+		prevArrow: '<div class="set__up"><img src="img/svg/up.svg" alt="" ></div>',
+		nextArrow: '<div class="set__down"><img src="img/svg/down.svg" alt=""></div>',
+		// asNavFor: '.slider-thumb',
+		arrows: true,
 		draggable: false,
-		responsive: [
+		/*responsive: [
 			{
 				breakpoint: 767,
 				settings: {
@@ -314,6 +317,6 @@ $(function(){
 					fade: true,
 				}
 			},
-		]
+		]*/
 	});
 });
