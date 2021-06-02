@@ -1,43 +1,151 @@
-<!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
-    <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
-            role="tab" aria-controls="home" aria-selected="true">Главная</button>
-    </li>
-    <li class="nav-item" role="presentation">
-        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
-            role="tab" aria-controls="profile" aria-selected="false">Профиль</button>
-    </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores beatae voluptatem illum molestiae sunt
-        adipisci a eum blanditiis, nemo suscipit cum ut excepturi. Odio consectetur odit labore perferendis, sunt
-        fugiat?
-    </div>
-    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-        lololololololol
-    </div>
-</div> -->
+<div class="product__background">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="home" aria-selected="true">О товаре</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                role="tab" aria-controls="profile" aria-selected="false">Наличие товара</button>
+        </li>
+    </ul>
 
-
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-    <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Messages</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
-    </li>
-  </ul>
-  
-  <div class="tab-content">
-    <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">1</div>
-    <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">ДLorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, deserunt asperiores. Aliquam, recusandae eveniet at quos nesciunt excepturi error, itaque cum cupiditate alias culpa voluptates voluptatum dicta autem nobis quibusdam!</div>
-    <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
-    <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
-  </div>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="product__row">
+                <div class="product__description">
+                    <div class="product__header">
+                        Описание товара!
+                    </div>
+                    <div class="product__text">
+                        Переносной кейс предназначен для размещения набора ручного инструмента Мастак 01-094 °C,
+                        состоящего
+                        из 94 предметов, а также других,
+                        <br>
+                        на усмотрение мастера, комплектаций. Применяется в мастерских,
+                        выездными ремонтными бригадами, для работ в быту и т. д.
+                        <br>
+                        <br>
+                        Кейс изготовлен из качественного и ударопрочного ABS-пластика, обладает ярким дизайном, имеет
+                        металлические замки с фиксатором CLIP-LOCK,
+                        <br>
+                        ручка для переноски
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="availability__product">
+                <div class="availability__wrapper">
+                    <div class="availability__info">
+                        <div class="availability__adress">
+                            Адрес
+                        </div>
+                        <div class="availability__schedule">
+                            График работы
+                        </div>
+                        <div class="availability__presence">
+                            Наличие
+                        </div>
+                        <div class="availability__phone">
+                            Телефон
+                        </div>
+                    </div>
+                    <div class="center__row">
+                        <div class="center__column">
+                            <div class="availability__center">
+                                Центральный склад
+                            </div>
+                            <div class="center__text">
+                                Приморский край, ст. Жулевская, ул. Транспортная, 5-Г.
+                                <br>
+                                Магазин находится в головном здании.
+                            </div>
+                        </div>
+                        <div class="center__schedule">
+                            Пн-пт
+                            <br>
+                            7:00 - 17:00
+                        </div>
+                        <div class="center__presence">
+                            В наличии
+                        </div>
+                        <div class="center__phone">
+                            8-(800) 251-44-75
+                        </div>
+                    </div>
+                    <div class="field__row">
+                        <div class="field__column">
+                            <div class="availability__field">
+                                м Октябрьское поле
+                            </div>
+                            <div class="field__text">
+                                Город Москва,
+                                <br>
+                                ул. Народного Ополчения, 48 корпус 1
+                            </div>
+                        </div>
+                        <div class="field__schedule">
+                            Пн-вс
+                            <br>
+                            круглосуточно
+                        </div>
+                        <div class="field__presence">
+                            В наличии
+                        </div>
+                        <div class="field__phone">
+                            8-(800) 251-44-75
+                        </div>
+                    </div>
+                    <div class="petrovskaya__row">
+                        <div class="petrovskaya__column">
+                            <div class="availability__petrovskaya">
+                                м Петровско-Разумовская
+                            </div>
+                            <div class="petrovskaya__text">
+                                Город Москва,
+                                <br>
+                                ул. Линии Октябрьской Железной Дороги, д. 2с2
+                            </div>
+                        </div>
+                        <div class="petrovskaya__schedule">
+                            Пн-вс
+                            <br>
+                            круглосуточно
+                        </div>
+                        <div class="petrovskaya__presence">
+                            В наличии
+                        </div>
+                        <div class="petrovskaya__phone">
+                            8-(800) 251-44-75
+                        </div>
+                    </div>
+                    <div class="trade__row">
+                        <div class="trade__column">
+                            <div class="availability__trade">
+                                м Профсоюзная
+                            </div>
+                            <div class="trade__text">
+                                Город Москва
+                                <br>
+                                Ломоносовский просп., д. 5
+                            </div>
+                        </div>
+                        <div class="trade__schedule">
+                            Пн-вс
+                            <br>
+                            круглосуточно
+                        </div>
+                        <div class="trade__presence">
+                            Нет в наличии
+                        </div>
+                        <div class="trade__phone">
+                            8-(800) 251-44-75
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

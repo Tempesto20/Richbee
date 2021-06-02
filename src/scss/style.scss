@@ -33,10 +33,15 @@ body {
         padding: 0 10px;
     }
 }
+
+
+@import 'slick';
 @import 'slick';
 @import 'slick-theme';
+@import 'bootstrap.min';
 
 @import 'header';
 @import 'richbee';
 @import 'set';
 @import 'product';
+@import 'analogs';

@@ -322,29 +322,14 @@ $(function () {
   //----------------------------------------
   //---(вкладки и навигация)----------------------
 
-	// const triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'))
-	// triggerTabList.forEach(function (triggerEl) {
-	// 	var tabTrigger = new bootstrap.Tab(triggerEl)
+var triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'))
+triggerTabList.forEach(function (triggerEl) {
+	var tabTrigger = new bootstrap.Tab(triggerEl)
 
-	// 	triggerEl.addEventListener('click', function (event) {
-	// 		event.preventDefault()
-	// 		tabTrigger.show()
-	// 	})
-	// })
-
-	var firstTabEl = document.querySelector('#myTab li:last-child a')
-	var firstTab = new bootstrap.Tab(firstTabEl)
-  
-	firstTab.show()
-
-	var someTabTriggerEl = document.querySelector('#someTabTrigger')
-	var tab = new bootstrap.Tab(someTabTriggerEl)
-  
-	tab.show()
-
-	var tabEl = document.querySelector('button[data-bs-toggle="tab"]')
-tabEl.addEventListener('shown.bs.tab', function (event) {
-  event.target // недавно активированная вкладка
-  event.relatedTarget // предыдущая активная вкладка
+	triggerEl.addEventListener('click', function (event) {
+		event.preventDefault()
+		tabTrigger.show()
+	})
 })
+
   //----------------------------------------

@@ -5,7 +5,7 @@
 }
 
 .set__background {
-	background: #E5E5E5;
+	background: #ffffff;
 	padding-bottom: 100px;
 }
 
@@ -248,10 +248,10 @@
 		margin: 40px 0px 0px 20px;
 	}
 	@media (max-width: $md3) {
-		margin: 0px 0px 0px 0px;
+		margin: 10px 0px 0px 0px;
 	}
 	@media (max-width: $md4) {
-		margin: -40px 0px 0px 0px;
+		margin: 10px 0px 0px 0px;
 	}
 }
 
@@ -402,7 +402,7 @@
 
 .interior__arrow {
 	position: relative;
-	top: 33px;
+	top: 27px;
 	right: 25px;
 }
 
