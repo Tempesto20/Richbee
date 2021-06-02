@@ -61,7 +61,7 @@
 .richbee__search-1 {}
 
 #bottom__email-2 {
-    width: 591px;
+    width: 400px;
     height: 48px;
     border: 1px solid #a4c3ca;
     background: #fff;
@@ -71,7 +71,7 @@
     color: #B8B8B8;
     background-color: white;
 
-    padding: 16px 365px 16px 20px;
+    padding: 16px 0px 16px 20px;
     margin: 34px 0px 0px 0px;
     @media (max-width: $md1) {
         width: 200px;
@@ -124,10 +124,9 @@
         margin: 0px 10px 20px 20px;
     }
 }
-
-.card__person-background {}
-
-.card__person {}
+.richbee__card-person:hover {
+    background: #EFEFEF;
+}
 
 .card__person-img {
     margin: 10px 12px 0px 12px;

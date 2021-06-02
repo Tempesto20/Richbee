@@ -33,11 +33,10 @@ body {
         padding: 0 10px;
     }
 }
+@import 'slick';
+@import 'slick-theme';
 
 @import 'header';
 @import 'richbee';
 @import 'set';
-
-
-@import 'slick';
-@import 'slick-theme';
+@import 'product';

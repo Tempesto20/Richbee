@@ -256,17 +256,7 @@
 // 	// ---------------
 // };
 
-
-/*$(function(){
-	$('.slick-vertical').slick({
-		vertical: true,
-		verticalSwiping: true,
-		slidesToShow: 1,
-		autoplay: false,
-		prevArrow: '<img src="img/svg/up.svg" alt="">',
-        nextArrow: '<img src="img/svg/down.svg" alt="">'
-	});
-});*/
+//--(Slider)---------------------------------------------------------
 
 $(function(){
 	$('.slider-thumb').slick({
@@ -280,22 +270,22 @@ $(function(){
 		asNavFor: '.slider-preview',
 		arrows: true,
 		focusOnSelect: true,
-		/*responsive: [
+		responsive: [
 			{
 				breakpoint: 767,
 				settings: {
 					vertical: false,
 				}
 			},
-			{
-				breakpoint: 479,
-				settings: {
-					vertical: false,
-					slidesPerRow: 3,
-					slidesToShow: 3,
-				}
-			},
-		]*/
+			// {
+			// 	breakpoint: 479,
+			// 	settings: {
+			// 		vertical: false,
+			// 		slidesPerRow: 3,
+			// 		slidesToShow: 3,
+			// 	}
+			// },
+		]
 	});
 	$('.slider-preview').slick({
 		autoplay: false,
@@ -309,14 +299,52 @@ $(function(){
 		// asNavFor: '.slider-thumb',
 		arrows: true,
 		draggable: false,
-		/*responsive: [
+		responsive: [
 			{
 				breakpoint: 767,
 				settings: {
 					vertical: false,
 					fade: true,
+					prevArrow: '<div class="set__up"><img src="img/set/arrow__left.svg" alt="" ></div>',
+					nextArrow: '<div class="set__down"><img src="img/set/arrow__right.svg" alt=""></div>',
 				}
 			},
-		]*/
+		]
 	});
 });
+//--------------------------------------------------
+
+//---(всплывающие подсказки)----------------------
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip()
+})
+
+  //----------------------------------------
+  //---(вкладки и навигация)----------------------
+
+	// const triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'))
+	// triggerTabList.forEach(function (triggerEl) {
+	// 	var tabTrigger = new bootstrap.Tab(triggerEl)
+
+	// 	triggerEl.addEventListener('click', function (event) {
+	// 		event.preventDefault()
+	// 		tabTrigger.show()
+	// 	})
+	// })
+
+	var firstTabEl = document.querySelector('#myTab li:last-child a')
+	var firstTab = new bootstrap.Tab(firstTabEl)
+  
+	firstTab.show()
+
+	var someTabTriggerEl = document.querySelector('#someTabTrigger')
+	var tab = new bootstrap.Tab(someTabTriggerEl)
+  
+	tab.show()
+
+	var tabEl = document.querySelector('button[data-bs-toggle="tab"]')
+tabEl.addEventListener('shown.bs.tab', function (event) {
+  event.target // недавно активированная вкладка
+  event.relatedTarget // предыдущая активная вкладка
+})
+  //----------------------------------------
