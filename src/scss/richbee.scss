@@ -46,7 +46,7 @@
     color: #383838;
     margin: 34px 28px 0px 0px;
     @media (max-width: $md1) {
-        margin: 47px 28px 0px 0px;
+        margin: 34px 28px 0px 0px;
     }
     @media (max-width: $md2) {
         margin: 4px 10px 0px 0px;
@@ -88,7 +88,7 @@
     color: #FFFFFF;
     cursor: pointer;
     display: none;
-    padding: 17px 16px;
+    padding: 12px 16px;
     margin: 34px 0px 0px 0px;
 }
 
@@ -124,6 +124,148 @@
         margin: 0px 10px 20px 20px;
     }
 }
+
+.modal-content {
+    width: 600px;
+
+}
+
+.modal-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #0B0B0B;
+    white-space: nowrap;
+    margin: 70px 0px 0px 40px;
+}
+
+.mobal__mail {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #797979;
+    margin: 30px 0px 0px 40px;
+}
+
+#mobal__mail-2 {
+    width: 510px;
+    height: 54px;
+    background: #F8F8F8;
+    border: 1px solid #B8B8B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px 0px 12px 30px;
+    margin: 15px 49px 0px 40px;
+}
+
+#mobal__mail-2.error {
+    border: 1px solid #ff0000;
+}
+
+#mobal__mail-2.ok {
+    border: 1px solid #00ff00;
+}
+
+.mobal__password-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #797979;
+    margin: 20px 0px 0px 40px;
+}
+
+#mobal__password-1 {
+    width: 510px;
+    height: 54px;
+    background: #F8F8F8;
+    border: 1px solid #B8B8B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px 0px 12px 30px;
+    margin: 15px 49px 0px 40px;
+}
+
+.mobal__forgot {
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #0B0B0B;
+    margin: 20px 0px 0px 40px;
+}
+
+.mobal__row {
+    display: flex;
+    flex-direction: row;
+}
+
+.mobal__forgot-1 {}
+
+.mobal__button-1 {
+    width: 246px;
+    height: 45px;
+    background: #FFD637;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 14px 20px 14px 20px;
+    margin: 30px 20px 0px 40px;
+
+    a:hover {
+        color: #FFFFFF;
+    }
+}
+
+.mobal__batton-1 {}
+
+.mobal__button-text-1 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #383838;
+    text-decoration: none;
+    padding: 14px 20px 14px 74px;
+}
+
+.mobal__forgot-2 {}
+
+.mobal__button-2 {
+    width: 246px;
+    height: 45px;
+    background: #F8F8F8;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 14px 20px 14px 20px;
+    margin: 30px 0px 60px 0px;
+
+    a:hover {
+        color: #FFD637;
+    }
+}
+
+.mobal__batton-2 {}
+
+.mobal__button-text-2 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #383838;
+    text-decoration: none;
+    padding:14px 20px 14px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
 .richbee__card-person:hover {
     background: #EFEFEF;
 }

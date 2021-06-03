@@ -19,12 +19,66 @@
                     </a>
                 </div>
                 <div class="richbee__cards">
-                    <div class="richbee__card-person">
+                    <div class="richbee__card-person" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         <div class="card__person-background"></div>
-                        <div class="card__person">
-                            <img src="img/svg/user.svg" alt="" class="card__person-img">
-                            <img src="img/svg/line.svg" alt="">
+                        <div class="card__person" >
+                                <img src="img/svg/user.svg" alt="" class="card__person-img">
+                                <img src="img/svg/line.svg" alt="">
                         </div>
+        <!-- Модальное окно -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Вход в личный кабинет </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mobal__mail">
+                            Email
+                        </div>
+                        <div id="mobal__mail">
+                            <input id="mobal__mail-2" type="text" placeholder="nikolayivanovich@yandex.ru"
+                                class="contacts-input">
+                        </div>
+                        <div class="mobal__password-text">
+                            Пароль 
+                        </div>
+                        <div id="mobal__password">
+                            <input id="mobal__password-1" type="text" placeholder="Пароль"
+                                class="contacts-input">
+                        </div>
+                        <div class="mobal__forgot">
+                            Забыли пароль?
+                        </div>
+                        <div class="mobal__row">
+                            <div class="mobal__forgot-1">
+                                <div class="mobal__button-1">
+                                    <div class="mobal__batton-1">
+                                        <a href="#" class="mobal__button-text-1" id="mobal__button-text">
+                                            Войти
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobal__forgot-2">
+                                <div class="mobal__button-2">
+                                    <div class="mobal__batton-2">
+                                        <a href="#" class="mobal__button-text-2" id="mobal__button-text">
+                                            ЗАРЕГИСТРИРОВАТЬСЯ
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
                         <div class="richbee__column">
                             <div class="person__title">
                                 <p>Вход</p>

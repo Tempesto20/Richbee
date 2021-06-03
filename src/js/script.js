@@ -48,7 +48,7 @@
 
 // 	document.getElementById('bottom__button-text').onclick = function(e) {
 // 		e.preventDefault();
-// 		const email = document.getElementById("bottom__email-2");
+// 		const email = document.getElementById("bottom__mail-2");
 
 // 		if (validateEmail(email.value)) {
 // 			email.classList.remove('error');
@@ -296,7 +296,6 @@ $(function(){
 		appendArrows: $('.arrows'),
 		prevArrow: '<div class="set__up"><img src="img/svg/up.svg" alt="" ></div>',
 		nextArrow: '<div class="set__down"><img src="img/svg/down.svg" alt=""></div>',
-		// asNavFor: '.slider-thumb',
 		arrows: true,
 		draggable: false,
 		responsive: [
@@ -333,3 +332,59 @@ triggerTabList.forEach(function (triggerEl) {
 })
 
   //----------------------------------------
+
+  //-----()----------------------------
+
+  $(document).ready(function(){
+	$('.carousel').slick({
+	slidesToShow: 4,
+	dots:true,
+	centerMode: true,
+		prevArrow: '<div class="set__up-1"><img src="img/set/arrow__left.svg" alt="" ></div>',
+	nextArrow: '<div class="set__down-1"><img src="img/set/arrow__right.svg" alt=""></div>',
+	responsive: [
+		{
+			breakpoint: 1195,
+			settings: {
+				centerMode:true, 
+				slidesToShow:3,
+				slidesToScroll:1,
+				cssEase: 'linear'
+			}
+		},
+	]
+	});
+  });
+  
+//---------------------------------------------
+//-------(Валидация e-mail)-----------------------------------------
+function validateEmail(email) {
+	const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	return re.test(email);
+}
+
+document.getElementById('bottom__button-text').onclick = function(e) {
+	e.preventDefault();
+	const email = document.getElementById("bottom__mail-2");
+
+	if (validateEmail(email.value)) {
+		email.classList.remove('error');
+		email.classList.add('ok');
+	} else {
+		email.classList.remove('ok');
+		email.classList.add('error');
+	}
+	
+	return false;
+}
+//Tempesto20
+// ------------------
+
+//-----(модальное окно)------------------------------------
+var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
+//-------------------------------------------------------------
