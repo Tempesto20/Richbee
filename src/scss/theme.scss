@@ -1,0 +1,9 @@
+.tooltip {
+    padding: 100px;
+}
+
+$tooltip-font-size: 16px;
+$tooltip-padding-y: 8px;
+$tooltip-padding-x: 8px;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";

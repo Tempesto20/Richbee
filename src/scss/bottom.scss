@@ -6,7 +6,8 @@
     background: #FFD637;
 }
 
-.bottom__wrapper {}
+.bottom__wrapper {
+}
 
 .bottom__row {
     display: flex;
@@ -20,12 +21,12 @@
 .bottom__img-messeng {
     width: 60px;
     height: 50px;
-    margin: 74px 42px 74px 120px;
+    margin: 74px 42px 74px 0px;
     @media (max-width: $md1) {
-        margin: 48px 42px 0px 20px;
+        margin: 48px 42px 0px 0px;
 	}
     @media (max-width: $md4) {
-        margin: 48px 20px 0px 20px;
+        margin: 48px 20px 0px 0px;
 	}
 }
 
@@ -54,10 +55,10 @@
         margin: 30px 0px 0px 0px;
 	}
     @media (max-width: $md3) {
-        margin: 20px 0px 0px 20px;
+        margin: 20px 0px 0px 0px;
 	}
     @media (max-width: $md4) {
-        margin: 20px 0px 0px 20px;
+        margin: 20px 0px 0px 0px;
 	}
 }
 
@@ -79,10 +80,10 @@
     padding: 10px 0px 10px 20px;
     margin: 80px 20px 0px 0px;
     @media (max-width: $md1) {
-        margin: 30px 20px 60px 20px;
+        margin: 30px 20px 60px 0px;
 	}
     @media (max-width: $md4) {
-        margin: 30px 0px 0px 20px;
+        margin: 30px 0px 0px 0px;
 	} 
 }
 #bottom__mail-2.error {
@@ -105,10 +106,10 @@
         color: #FFFFFF;
     } 
     @media (max-width: $md1) {
-        margin: 30px 20px 60px 20px;
+        margin: 30px 20px 60px 0px;
 	}  
     @media (max-width: $md4) {
-        margin: 30px 0px 30px 20px;
+        margin: 30px 0px 30px 0px;
 	} 
 }
 

@@ -1,9 +1,9 @@
-
+@import "theme";
 @import 'reset';
 @import 'mixins';
 @import 'fonts';
 
-$font-family-default: Montserrat;
+$font-family-default: 'Roboto';
 $font-size-default: 24px;
 $font-weight-default: 400;
 
@@ -38,7 +38,6 @@ body {
 @import 'slick';
 @import 'slick';
 @import 'slick-theme';
-@import 'bootstrap.min';
 
 @import 'header';
 @import 'richbee';

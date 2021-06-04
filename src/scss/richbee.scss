@@ -32,7 +32,7 @@
 .richbee__logo {
     width: 42px;
     height: 43px;
-    margin: 35px 17px 0px 120px;
+    margin: 35px 17px 0px 0px;
     @media (max-width: $md1) {
         margin: 35px 6px 0px 20px;
     } 
@@ -44,7 +44,7 @@
 .richbee__header-text {
     font-size: 30px;
     color: #383838;
-    margin: 34px 28px 0px 0px;
+    margin:44px 28px 0px 0px;
     @media (max-width: $md1) {
         margin: 34px 28px 0px 0px;
     }
@@ -61,7 +61,7 @@
 .richbee__search-1 {}
 
 #bottom__email-2 {
-    width: 400px;
+    width: 540px;
     height: 48px;
     border: 1px solid #a4c3ca;
     background: #fff;
@@ -88,7 +88,7 @@
     color: #FFFFFF;
     cursor: pointer;
     display: none;
-    padding: 12px 16px;
+    padding: 15px 16px;
     margin: 34px 0px 0px 0px;
 }
 
@@ -123,6 +123,11 @@
     @media (max-width: $md4) {
         margin: 0px 10px 20px 20px;
     }
+}
+.card__person-line-1{
+    position: relative;
+    top: 0px;
+    left: 0px;
 }
 
 .modal-content {
@@ -258,14 +263,6 @@
 
 
 
-
-
-
-
-
-
-
-
 .richbee__card-person:hover {
     background: #EFEFEF;
 }
@@ -291,7 +288,7 @@
     font-size: 13px;
     line-height: 15px;
     color: #ACACAC;
-    margin: -14px 40px 0px 10px;
+    margin: 0px 40px 0px 10px;
 }
 
 .richbee__card-basket {
@@ -317,10 +314,14 @@
 
 .card__basket-point {
     position: relative;
-    top: -5px;
+    top: 10px;
     right: 22px;
 }
-
+.card__basket-line-2{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
 .basket__title {
     font-weight: bold;
     font-size: 13px;
@@ -332,26 +333,36 @@
     font-size: 13px;
     line-height: 30px;
     color: #ACACAC;
-    margin: -20px 20px 0px 10px;
+
+    margin: 0px 0px 0px 10px;
 }
+
 
 
 .richbee__catalog {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .richbee__catalog-1 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    @media (max-width: $md1) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+   
 }   
 
 .richbee__choice {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    @media (max-width: $md1) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 .richbee__products {
@@ -360,16 +371,18 @@
     line-height: 16px;
     text-transform: uppercase;
     color: #383838;
-    margin: 44px 25px 0px 120px;
+    white-space: nowrap;
+    margin: 44px 20px 0px 0px;
     transition: all 0.3s ease 0s;
     &:hover {
         border-bottom: 1px solid rgb(0, 0, 0);
     }
     @media (max-width: $md1) {
-        margin: 44px 25px 0px 20px;
+        white-space: auto;
+        margin: 44px 25px 0px 0px;
     }
     @media (max-width: $md4) {
-        margin: 20px 20px 0px 20px;
+        margin: 20px 20px 0px 0px;
     }
 }
 
@@ -379,10 +392,15 @@
     line-height: 16px;
     text-transform: uppercase;
     color: #383838;
-    margin: 44px 25px 0px 0px;
+    white-space: nowrap;
+    margin: 44px 20px 0px 0px;
     transition: all 0.3s ease 0s;
     &:hover {
         border-bottom: 1px solid rgb(0, 0, 0);
+    }
+    @media (max-width: $md1) {
+        white-space: auto;
+        margin-right: 0px;
     }
     @media (max-width: $md4) {
         margin: 20px 0px 0px 10px;
@@ -391,7 +409,7 @@
 
 .richbee__catalog-line {
 
-    margin: 44px 26px 0px 0px;
+    margin: 44px 0px 0px 0px;
     @media (max-width: $md1) {
         display: none;
     }
@@ -400,22 +418,19 @@
 .catalog__line-1{
     height: 24px;
 }
-.richbee__auto {
-
-}
-
-.richbee__list {
-
-}
 
 .richbee__list-ul {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
     color: #B8B8B8;
+    @media (max-width: $md1) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 .richbee__list-ul li{
     margin: 44px 23px 0px 0px;
@@ -424,6 +439,6 @@
         border-bottom: 1px solid rgb(0, 0, 0);
     }
     @media (max-width: $md1) {
-        margin: 20px 25px 0px 20px;
+        margin: 20px 20px 0px 0px !important;
     }
 }

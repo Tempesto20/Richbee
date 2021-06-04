@@ -23,9 +23,9 @@
 }
 
 .main-1 {
-	margin: 30px 5px 0px 120px;
+	margin: 30px 5px 0px 0px;
 	@media (max-width: $md1) {
-		margin: 30px 5px 0px 20px;
+		margin: 30px 5px 0px 0px;
 	}
 }
 
@@ -52,9 +52,9 @@
 	font-size: 24px;
 	line-height: 28px;
 	color: #0B0B0B;
-	margin: 25px 0px 0px 120px;
+	margin: 25px 0px 0px 0px;
 	@media (max-width: $md1) {
-		margin:  25px 0px 0px 20px;
+		margin:  25px 0px 0px 0px;
 	}
 }
 
@@ -68,15 +68,18 @@
 }
 
 //--------------------------------------------------------------
+.arrows{
+width: 0px;
+}
 .set__up {
 	position: relative;
 	top: 14px;
-	left: 120px;
+	left: 10px;
 	width: 30px;
 	height: 30px;
 	@media (max-width: $md1) {
-		top: 8px;
-		left: 40px;
+		top: 10px;
+		left: 13px;
 	}
 	@media (max-width: $md3) {
 		top: -50px;
@@ -89,13 +92,13 @@
 
 .set__down {
 	position: relative;
-	left: 116px;
+	left: 8px;
 	top: 378px;
 	width: 30px;
 	height: 30px;
 	@media (max-width: $md1) {
 		top: 352px;
-		left: 40px;
+		left: 8px;
 	}
 	@media (max-width: $md3) {
 		top: -84px;
@@ -127,7 +130,7 @@
 }
 .slider-thumb {
 	max-width: 125px;
-	margin: 80px 0px 0px 80px;
+	margin: 80px 0px 0px 0px;
 	@media (max-width: $md1) {
 		margin: 80px 0px 0px 0px;
 	}
@@ -277,7 +280,7 @@
 .interior__header-number {
 	color: black;
 	font-weight: bold;
-	margin: 24px 0px 0px 0px;	
+	margin: 27px 0px 0px 0px;	
 }
 
 .interior__vendor {
@@ -295,7 +298,7 @@
 .interior__vendor-number {
 	color: black;
 	font-weight: bold;
-	margin: 3px 0px 0px 0px;
+	margin: 7px 0px 0px 0px;
 }
 
 .interior__set {
@@ -402,7 +405,7 @@
 
 .interior__arrow {
 	position: relative;
-	top: 27px;
+	top: 33px;
 	right: 25px;
 }
 

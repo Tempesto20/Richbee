@@ -38,6 +38,9 @@
   .header__nav-list {
     display: flex;
     list-style: none;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
   }
 
   .header__nav-item {
@@ -53,6 +56,7 @@
     transition: all 0.3s ease 0s;
     text-decoration: none;
     &:hover {
+      color: #B8B8B8;
       border-bottom: 1px solid rgb(255, 255, 255);
     }
   }
@@ -61,14 +65,12 @@
     display: flex;
     flex-direction: row;
 
-    @media (max-width: $md3) {
-      display: flex;
-      flex-direction: column;
-    }
   }
 
   .order {
+    
   }
+
   .order__text{
     white-space: nowrap;
     font-size: 14px;
@@ -76,10 +78,11 @@
     color: #FFD637;
     transition: all 0.3s ease 0s;
     border-bottom: 1px dashed #FFD637;
-    margin: 15px 26px 15px 0px;
+    margin-right: 27px;
+
     @media (max-width: $md3) {
       max-width: 96px;
-      margin: 20px 0px 20px 20px;
+      margin: 20px 0px 20px 0px;
     }
 
     &:hover {
@@ -91,6 +94,8 @@
   .social {
     display: flex;
     flex-direction: row;
+    align-items: center;
+
     @media (max-width: $md3) {
       display: flex;
       flex-direction: column;
@@ -100,6 +105,7 @@
   .network {
     display: flex;
     flex-direction: row;
+    align-items: center;
     @media (max-width: $md3) {
       display: flex;
       flex-direction: row;
@@ -107,29 +113,30 @@
   }
 
   .vk {
-    margin: 15px 15px 15px 0px;
+    margin-right: 15px;
     @media (max-width: $md3) {
-      margin: 0px 15px 20px 20px;
+      margin: 20px 15px 20px 0px;
     }
   }
 
   .whatsapp {
-    margin: 15px 15px 15px 0px;
+    margin-right: 15px;
     @media (max-width: $md3) {
-      margin: 0px 15px 20px 0px;
+      margin: 20px 15px 20px 0px;
     }
   }
 
   .instagram {
-    margin: 15px 15px 15px 0px;
+    margin-right: 15px;
     @media (max-width: $md3) {
-      margin: 0px 15px 20px 0px;
+      margin: 20px 15px 20px 0px;
     }
   }
 
   .contact {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 
   .email {
@@ -137,15 +144,16 @@
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
-    margin: 15px 15px 15px 27px;
+    margin-right: 15px;
     @media (max-width: $md3) {
-      margin: 0px 15px 20px 20px;
+      float: left;
+      margin: 0px 15px 20px 0px;
     }
   }
 
   .line {
     color: white;
-    margin: 15px 15px 15px 0px;
+    margin-right: 15px;
     @media (max-width: $md3) {
       margin: 0px 15px 20px 0px;
     }
@@ -156,7 +164,7 @@
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
-    margin: 15px 15px 15px 0px;
+    // margin: 15px 15px 15px 0px;
     @media (max-width: $md3) {
       margin: 0px 15px 20px 0px;
     }
