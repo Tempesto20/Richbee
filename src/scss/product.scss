@@ -18,7 +18,6 @@
 }
 
 .nav-item:hover {
-    border-bottom: 3px solid #FFD637;
     color: #000000 !important;
 }
 
@@ -26,8 +25,19 @@
     font-weight: 500;
     font-size: 22px;
     line-height: 26px;
-    color: #383838;
+    color: #797979;
 
+    &.active {
+        border-top-color: #fff !important;
+        border-right-color: #fff !important;
+        border-bottom-color: #FFD637 !important;
+        border-left-color: #fff !important;
+        border-bottom-width: 3px !important;
+    }
+
+    &:hover {
+        color: #000 !important;
+    }
 }
 
 .active {}

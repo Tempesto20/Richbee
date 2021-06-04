@@ -162,39 +162,3 @@ document.getElementById('bottom__button-text').onclick = function(e) {
 	return false;
 }
 // ------------------
-
-//-----(модальное окно)------------------------------------
-var myModal = document.getElementById('myModal')
-var myInput = document.getElementById('myInput')
-
-myModal.addEventListener('shown.bs.modal', function () {
-  myInput.focus()
-})
-//-----------------------------------------------------------
-
-	// Кнопка наверх
-	function trackScroll() {
-		var scrolled = window.pageYOffset;
-		var coords = document.documentElement.clientHeight;
-
-		if (scrolled > coords) {
-			goTopBtn.classList.add('back-to-top__show');
-		}
-		if (scrolled < coords) {
-			goTopBtn.classList.remove('back-to-top__show');
-		}
-	}
-
-	function backToTop() {
-		if (window.pageYOffset > 0) {
-			window.scrollBy(0, -80);
-			setTimeout(backToTop, 0);
-		}
-	}
-
-	var goTopBtn = document.querySelector('.back-to-top');
-
-	window.addEventListener('scroll', trackScroll);
-	goTopBtn.addEventListener('click', backToTop);
-
-	// ---------------

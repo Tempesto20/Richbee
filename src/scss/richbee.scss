@@ -45,9 +45,9 @@
     font-size: 30px;
     color: #383838;
     margin:44px 28px 0px 0px;
-    @media (max-width: $md1) {
+    /*@media (max-width: $md1) {
         margin: 34px 28px 0px 0px;
-    }
+    }*/
     @media (max-width: $md2) {
         margin: 4px 10px 0px 0px;
     }
@@ -74,8 +74,14 @@
     padding: 16px 0px 16px 20px;
     margin: 34px 0px 0px 0px;
     @media (max-width: $md1) {
-        width: 200px;
+        width: 500px;
         padding: 16px 0px 16px 20px;
+    }
+    @media (max-width: $md3) {
+        width: 300px;
+    }
+    @media (max-width: $md4) {
+        width: 200px;
     }
 }
 
@@ -90,12 +96,22 @@
     display: none;
     padding: 15px 16px;
     margin: 34px 0px 0px 0px;
+    border-radius: 0px 4px 4px 0px;
 }
 
 .richbee__img {}
 
 .richbee__button {
     display: block;
+}
+
+.contacts-input {
+    border: 1px solid #ECEDEF !important;
+    border-radius: 4px 0 0 4px;
+
+    &::placeholder {
+        color: #B8B8B8;
+    }
 }
 
 .richbee__cards {
@@ -112,8 +128,12 @@
     display: flex;
     flex-direction: row;
     height: 48px;
+    border-radius: 4px;
     background: #F8F8F8;
     margin: 34px 15px 0px 35px;
+    &:hover {
+        cursor: pointer;
+    }
     @media (max-width: $md2) {
         margin: 34px 15px 0px 20px;
     } 
@@ -261,7 +281,9 @@
     padding:14px 20px 14px 20px;
 }
 
-
+.card__person {
+    border-right: 1px solid #E4E4E4;
+}
 
 .richbee__card-person:hover {
     background: #EFEFEF;
@@ -274,6 +296,19 @@
 .richbee__column {
     display: flex;
     flex-direction: column;
+}
+
+.richbee__basket {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    white-space: nowrap;
+}
+
+.card__basket {
+    position: relative;
+    border-right: 1px solid #E4E4E4;
 }
 
 .person__title {
@@ -294,6 +329,7 @@
 .richbee__card-basket {
     display: flex;
     flex-direction: row;
+    border-radius: 4px;
     position: relative;
     height: 48px;
     background: #F8F8F8;
@@ -313,9 +349,9 @@
 }
 
 .card__basket-point {
-    position: relative;
+    position: absolute;
     top: 10px;
-    right: 22px;
+    right: 10px;
 }
 .card__basket-line-2{
     position: relative;
@@ -324,17 +360,15 @@
 }
 .basket__title {
     font-weight: bold;
+    text-align: left;
     font-size: 13px;
     color: #383838;
-    margin: 7px 0px 0px 10px;
+    margin-bottom: 6px;
 }
 
 .basket__text {
     font-size: 13px;
-    line-height: 30px;
     color: #ACACAC;
-
-    margin: 0px 0px 0px 10px;
 }
 
 
@@ -375,6 +409,7 @@
     margin: 44px 20px 0px 0px;
     transition: all 0.3s ease 0s;
     &:hover {
+        cursor: pointer;
         border-bottom: 1px solid rgb(0, 0, 0);
     }
     @media (max-width: $md1) {
@@ -395,7 +430,9 @@
     white-space: nowrap;
     margin: 44px 20px 0px 0px;
     transition: all 0.3s ease 0s;
+    
     &:hover {
+        cursor: pointer;
         border-bottom: 1px solid rgb(0, 0, 0);
     }
     @media (max-width: $md1) {
@@ -426,6 +463,7 @@
     line-height: 16px;
     text-transform: uppercase;
     color: #B8B8B8;
+    margin-bottom: 0px;
     @media (max-width: $md1) {
         display: flex;
         flex-direction: row;
@@ -436,6 +474,7 @@
     margin: 44px 23px 0px 0px;
     transition: all 0.3s ease 0s;
     &:hover {
+        cursor: pointer;
         border-bottom: 1px solid rgb(0, 0, 0);
     }
     @media (max-width: $md1) {
